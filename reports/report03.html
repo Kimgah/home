@@ -57,7 +57,12 @@
     parseInt(nb)
 
     function new_row(prev_row){
-        document.write(prev_row)
+        var i = 0;
+        while (true){
+            document.write(prev_row[i]+"  ");
+            i++;
+            if (prev_row[i] === undefined){break;}
+        }
         document.write("<br>")
     }
     var temp = new Array();
