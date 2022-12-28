@@ -4,18 +4,6 @@
 
 <head>
 
-  <script type="text/javascript" src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
-  <!-- Vendor JS Files -->
-  <script src="KnightOne/assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="KnightOne/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="KnightOne/assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="KnightOne/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="KnightOne/assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="KnightOne/assets/vendor/php-email-form/validate.js"></script>
-
-  <!-- Template Main JS File -->
-  <script src="KnightOne/assets/js/main.js"></script>
-
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
@@ -49,30 +37,12 @@
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
-  <script>
-    (function( $ ) {
-    "use strict";
-    $(function() {
-        function animated_contents() {
-            $(".zt-skill-bar > div ").each(function (i) {
-                var $this  = $(this),
-                    skills = $this.data('width');
 
-                $this.css({'width' : skills + '%'});
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="KnightOne/assets/css/skill.css">
 
-            });
-        }
-
-        if(jQuery().appear) {
-            $('.zt-skill-bar').appear().on('appear', function() {
-                animated_contents();
-            });
-        } else {
-            animated_contents();
-        }
-    });
-}(jQuery));
-  </script>
 </head>
 
 <body>
@@ -228,22 +198,49 @@
             <div class="icon-box mt-5 mt-lg-0" >
               <i class="bi bi-keyboard-fill"></i>
               <h4>PYTHON</h4>
-              <div class="zt-skill-bar"><div style="width: 85%;">python<span>85%</span></div></div>
+              <div class="skills">
+                <div class="skill">
+                  <!-- <div class="skill-name"></div> -->
+                  <div class="skill-bar">
+                    <div class="skill-per" per="85%" style="max-width: 85%"></div>
+                  </div>
+                </div>
+              </div>
             </div>
             <div class="icon-box mt-5">
               <i class="bi bi-database-fill"></i>
               <h4>SQL</h4>
-              <div class="zt-skill-bar"><div style="width: 95%;">mysql<span>95%</span></div></div>
+              <div class="skills">
+                <div class="skill">
+                  <!-- <div class="skill-name"></div> -->
+                  <div class="skill-bar">
+                    <div class="skill-per" per="95%" style="max-width: 95%"></div>
+                  </div>
+                </div>
+              </div>
             </div>
             <div class="icon-box mt-5">
               <i class="bi bi-display"></i>
               <h4>HTML5</h4>
-              <div class="zt-skill-bar"><div style="width: 80%;">html<span>80%</span></div></div>
+              <div class="skills">
+                <div class="skill">
+                  <!-- <div class="skill-name"></div> -->
+                  <div class="skill-bar">
+                    <div class="skill-per" per="80%" style="max-width: 80%"></div>
+                  </div>
+                </div>
+              </div>
             </div>
             <div class="icon-box mt-5">
               <i class="bi bi-calculator"></i>
               <h4>R</h4>
-              <div class="zt-skill-bar"><div style="width: 90%;">R<span>90%</span></div></div>
+              <div class="skills">
+                <div class="skill">
+                  <div class="skill-bar">
+                    <div class="skill-per" per="90%" style="max-width: 90%"></div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
           <div class="image col-lg-6 order-1 order-lg-2" style='background-image: url("KnightOne/assets/img/features.jpg");'></div>
